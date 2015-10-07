@@ -91,7 +91,7 @@ namespace YamlDotNet.Test
 
 			if (lines.Count > 0)
 			{
-				var indent = Regex.Match(lines[0], @"^(\t+)");
+				var indent = Regex.Match(lines[0], @"^(\t*)");
 				if (!indent.Success)
 				{
 					throw new ArgumentException("Invalid indentation");
